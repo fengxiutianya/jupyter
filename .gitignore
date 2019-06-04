@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.vscode
+*.pb
+work/DP/tf/model/*
+*.gz
+.idea
+.vscode

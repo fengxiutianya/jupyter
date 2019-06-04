@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  jupyter: 
+      image: registry.cn-hangzhou.aliyuncs.com/fengxiu/jupyter
+      container_name: jupyter
+      volumes: 
+        - "$PWD/work:/home/jovyan/work"
+        - "./config/start-notebook-hook:/usr/local/bin/start-notebook.d/"
+      ports: 
+        - "8888:8888"
+      # environment: 
+      #   "GRANT_SUDO": "yes"
+      # user: jovyan
